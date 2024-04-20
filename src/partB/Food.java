@@ -9,8 +9,8 @@
 package partB;
 
 public abstract class Food {
-	private String name;
-	private double price;
+	protected String name;
+	protected double price;
 
 	public Food(String name, double price) {
 		this.name = name;
@@ -25,7 +25,5 @@ public abstract class Food {
 		return this.price;
 	}
 
-	public void updatePrice(double updateP) {
-		this.price = updateP;
-	}
+	public abstract void updatePrice(double updateP);
 }

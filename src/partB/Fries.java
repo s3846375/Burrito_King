@@ -11,5 +11,8 @@ public class Fries extends Food {
 	public Fries(String name, double price) {
 		super(name, price);
 	}
-
+	@Override
+	public void updatePrice(double newPrice) {
+		this.price = newPrice;
+	}
 }
